@@ -1,5 +1,6 @@
 package com.practise.Entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
@@ -10,6 +11,7 @@ public class Product {
 	@Id
 	private int ProductId;
 	
+	@Column(name = "ProductName")
 	private String ProductName;
 	
 	private int ProductPrice;
